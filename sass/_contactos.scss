@@ -1,0 +1,199 @@
+.portada-principal_contactos {
+    background: url(../img/portadas/img-03.jpg) center no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+
+    h1 {
+        font-family: $txt-Principal;
+        font-size: 7.5vh;
+        color: rgb(235, 28, 28);
+        animation-name: mover;
+        animation-duration: 2s;
+        animation-iteration-count: inherit;
+        padding-top: 2.5rem;
+        padding-left: 7%;
+    }
+}
+
+
+@media (min-width: 520px) {
+    .portada-principal_contactos {
+        height: 350px;
+    }
+}
+
+@media (min-width: 768px) {
+    .portada-principal_contactos {
+        height: 350px;
+
+        h1 {
+            padding-top: 4rem;
+            font-size: 8vh;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .portada-principal_contactos {
+        padding-top: 6rem;
+        padding-left: 2%;
+        height: 400px;
+
+        h1 {
+            font-size: 15vh;
+        }
+    }
+}
+
+// FIN PORTADA
+
+// FORMULARIO
+
+.formulario {
+    margin: 0 auto;
+
+    h2 {
+        font-size: 50px;
+        font-family: $txt-Principal;
+        text-align: center;
+        padding-top: 16px;
+    }
+    .bg-contactos {
+        background-color: rgb(202, 193, 193);
+        padding: 25px;
+        max-width: 1000px;
+        margin: 25px auto;
+    }
+
+    .contenedor-form {
+        .flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2em;
+        }
+        .formulario-contacto {
+            display: flex;
+            flex-flow: column nowrap;
+            max-width: 600px;
+            margin: 0 auto;
+
+            & label {
+                margin-bottom: 0.3em;
+                font-family: $txt-parrafo;
+            }
+
+            & input,
+            & select,
+            & text {
+                margin-bottom: 0.8em;
+            }
+            input,
+            select,
+            option,
+            textarea {
+                padding: 0.5em;
+                border: none;
+                background: rgb(243, 240, 240);
+                color: black;
+                resize: none;
+                border-radius: 0.3em;
+            }
+            textarea {
+                min-height: 100px;
+            }
+        }
+        button .btn {
+            cursor: pointer;
+            border: none;
+        }
+    }
+
+    .formulario-personal {
+        .contenedor-datos {
+            width: 100%;
+
+            .datos-personales {
+                max-width: 100%;
+                height: 340px;
+            }
+            .formulario-info {
+                background-color: rgba(129, 126, 126, 0.281);
+
+                height: 360px;
+                margin: 0 auto;
+                margin-top: 16px;
+                border-radius: 16px;
+                overflow: hidden;
+            }
+            .datos-personales {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2em;
+            }
+            .datos-personales h3 {
+                text-transform: uppercase;
+                text-align: center;
+                word-wrap: break-word;
+                color: rgb(54, 46, 46);
+                font-family: $txt-parrafo;
+                font-weight: bolder;
+                background-color: rgba(146, 146, 146, 0.363);
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+            }
+            .datos-personales p {
+                color: black;
+                font-size: 16px;
+                padding: 10px;
+                line-height: 0;
+                width: max-content;
+                word-wrap: break-word;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .flex {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 3em;
+    }
+    .contenedor-form,
+    .contenedor-datos {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .portada-principal_contactos{
+        height: 450px;
+    }
+    .flex {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-form {
+        width: 540px;
+    }
+
+    .formulario h2 {
+        padding: 2rem;
+        font-size: 5rem;
+    }
+
+    .bg-contactos {
+        border-radius: 16px;
+    }
+}

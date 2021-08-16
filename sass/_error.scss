@@ -1,0 +1,35 @@
+body {
+    background-color: gainsboro;
+}
+
+.error {
+   
+    .contenedor {
+        background-color: rgb(241, 240, 237);
+        max-width: 500px;
+        height: 300px;
+        margin: auto;
+        position: relative;
+
+    }
+    p{
+        background-color: rgb(129, 16, 12);
+        font-size: 50px;
+        text-align: center;
+        padding:30px ;
+        font-family: sans-serif;
+        font-weight: 800;
+    }
+
+    a{
+        font-size: 20px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 20px;
+        color: rgb(0, 0, 0);
+    }
+    a:hover{
+     color: blue;
+    }
+}

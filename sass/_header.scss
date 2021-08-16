@@ -1,0 +1,356 @@
+body {
+    padding-top: 80px;
+
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #923b7cee;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.logo {
+    font-size: 25px;
+    padding: 0 25px;
+    line-height: 80px;
+    font-family: $txt-Principal;
+    color: white;
+}
+.contenedor-portada {
+    
+    min-width: 220px;
+    height: 580px;
+}
+
+.portada-principal {
+    background: url(../img/portadas/img-01.jpg) no-repeat left;
+    background-size: cover;
+    height: 100%;
+}
+
+.titulo-portada {
+    font-family: $txt-Principal;
+    font-size: 7.5vh;
+    color: #f4f4f4;
+    animation-name: mover;
+    animation-duration: 2s;
+    animation-iteration-count: inherit;
+    padding-top: 8rem;
+    padding-left: 0%;
+    text-align: center;
+}
+
+.titulo-portada span {
+    color: #e02b2b;
+}
+.item-gps {
+    text-align: center;
+    display: block;
+    padding-top: 40px;
+    cursor: pointer;
+    margin: auto;
+
+    .gps {
+        font-size: 1.5rem;
+        color: white;
+    }
+    .info {
+        padding-top: 10px;
+        display: block;
+        font-size: 16px;
+        color: white;
+        font-weight: 700;
+    }
+}
+
+.info:hover {
+    color: $color-principal;
+    transition: 0.5s;
+}
+
+// EFECTO TITULO PRINCIPAL
+@keyframes mover {
+    0% {
+        transform: translatex(-10em);
+    }
+    40% {
+        transform: translatex(1em);
+    }
+}
+// EFECTO TITULO PRINCIPAL
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+// BOTON HAMBURGUEZA
+.nav-toggle {
+    display: block;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+}
+// BOTON HAMBURGUEZA
+
+// MENU HAMBURGUEZA
+
+.nav-menu {
+    text-align: center;
+    margin-right: 20px;
+    background-color: #3e2c50;
+    position: fixed;
+    left: 0;
+    top: 80px;
+    width: 100%;
+
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+}
+
+.nav-menu-visible {
+    left: 0;
+    transition: left 0.5s;
+    padding-bottom: 2rem;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+    color: white;
+    font-family: $txt-parrafo;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.nav-menu-link_active {
+    border-bottom: 3px solid rgb(171, 116, 226);
+    padding-bottom: 8px;
+}
+.nav-menu-link_active:hover {
+    text-decoration: none;
+}
+
+.nav-menu-item {
+    line-height: 70px;
+    position: relative;
+}
+
+.nav-menu-link:hover {
+    background-color: $color-principal;
+}
+
+.iconos-search-cart_1 {
+    display: block;
+}
+
+.iconos-search-cart_1 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #3e2c50;
+    padding: 20px;
+    border-bottom: #6b0374 1px solid;
+
+    .search-link_1,
+    .carrito-link_1 {
+        color: white;
+        display: inline-block;
+    }
+}
+.iconos-search-cart_2 {
+    display: none;
+}
+
+// MENU HAMBURGUEZA
+
+// SUB-MENU PRODUCTOS
+
+#dropdown {
+    display: none;
+}
+.dropdown-item {
+    text-align: center;
+    line-height: 25px;
+    padding: 20px;
+}
+
+.dropdown-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+    color: white;
+    font-family: $txt-parrafo;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.dropdown-link:hover {
+    background-color: #b7549d;
+    color: white;
+}
+
+#dropdown.active-1 {
+    display: block;
+    background-color: #8c3a77;
+    top: 74px;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    
+  
+}
+
+.flecha {
+    position: relative;
+    top: -3px;
+    left: 5px;
+}
+// SUB-MENU PRODUCTOS
+
+@media (min-width: 520px) {
+    .contenedor-portada {
+        height: 500px;
+        width: 100%;
+    }
+    .titulo-portada {
+        font-size: 8vw;
+        padding-top: 5%;
+        text-align: left;
+        padding-left: 28%;
+    }
+
+ 
+
+    #dropdown.active-1 {
+        display: block;
+        background-color: #8c3a77;
+        top: 74px;
+        left: 0;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+    }
+    .item-gps {
+        padding-top: 22px;
+        margin: auto;
+        padding-left: 5%;
+    }
+    .gps,
+    .info {
+        font-size: 4vw;
+    }
+}
+@media (min-width: 768px) {
+    .portada-principal {
+        background: url(../img/portadas/img-01.jpg) no-repeat center;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .contenedor-portada {
+        height: 600px;
+    }
+
+    .titulo-portada {
+        font-size: 5.5rem;
+        padding-top: 15%;
+        text-align: center;
+        padding-left: 0;
+    }
+    #dropdown.active-1 {
+        display: block;
+        background-color: #8c3a77;
+        top: 74px;
+        left: 0;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+    }
+    .item-gps {
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .contenedor-portada {
+        max-height: 690px;
+    }
+    .portada-principal {
+        background-position: center;
+        width: 100%;
+    }
+    .titulo-portada {
+        font-size: 16vh;
+        text-align: center;
+        padding-top: 4rem;
+        padding-left: 2rem;
+    }
+    .item-gps {
+        text-align: center;
+        display: block;
+        padding-top: 50px !important;
+        padding: 0;
+        cursor: pointer;
+        margin: auto;
+    }
+
+    .info,
+    .gps {
+        font-size: 2vw;
+    }
+
+    .nav-menu {
+        display: contents;
+        font-family: $txt-parrafo;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    .iconos-search-cart_1 {
+        display: none;
+    }
+
+    .iconos-search-cart_2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .search-link,
+    .carrito-link {
+        color: white;
+        font-size: 18px;
+        position: static;
+    }
+
+    #dropdown.active-1 {
+        position: absolute;
+        line-height: 50px;
+        top: 65px;
+        left: -88px;
+        width: 300px;
+        border-radius: 5px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+}
