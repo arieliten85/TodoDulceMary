@@ -51,12 +51,26 @@
     .item-titulo {
         color: white;
         font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .item-titulo:hover {
+        color: rgb(240, 172, 235);
+        transition: 0.5s;
     }
 
     .sombra {
         background: rgba(2, 2, 2, 0.644);
         width: 100%;
-        padding: 20px;
+        padding: 30px 20px;
+    }
+
+    .sombra:hover {
+        background: rgba(14, 13, 13, 0.781);
+    }
+    .item-link {
+        display: inline-block;
+        width: 100%;
     }
 }
 
@@ -74,8 +88,6 @@
     .presentacion__contenedor {
         padding: 16px;
     }
-
-   
 }
 
 @media (min-width: 768px) {
@@ -107,9 +119,7 @@
         .item-titulo {
             font-size: 20px;
         }
-        .sombra {
-            padding: 20px;
-        }
+        
     }
 }
 
@@ -164,7 +174,6 @@
 }
 
 @media (min-width: 1280px) {
-
     .grilla-contenedor {
         display: grid;
         grid-template-columns: 2fr 1fr;

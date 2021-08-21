@@ -20,7 +20,6 @@ header {
     color: white;
 }
 .contenedor-portada {
-    
     min-width: 220px;
     height: 580px;
 }
@@ -106,13 +105,13 @@ header {
 // MENU HAMBURGUEZA
 
 .nav-menu {
-    text-align: center;
+    text-align: left;
     margin-right: 20px;
     background-color: #3e2c50;
     position: fixed;
     left: 0;
     top: 80px;
-    width: 100%;
+    width: 85%;
 
     height: calc(100% - 60px);
     overflow-y: auto;
@@ -122,13 +121,13 @@ header {
 }
 
 .nav-menu-visible {
-    left: 0;
+    left: 60px;
     transition: left 0.5s;
     padding-bottom: 2rem;
 }
 
 .nav-menu-link {
-    padding: 8px 12px;
+    padding: 16px 10px;
     border-radius: 3px;
     color: white;
     font-family: $txt-parrafo;
@@ -149,6 +148,7 @@ header {
 .nav-menu-item {
     line-height: 70px;
     position: relative;
+    padding: 10px
 }
 
 .nav-menu-link:hover {
@@ -214,8 +214,6 @@ header {
     position: absolute;
     z-index: 1;
     width: 100%;
-    
-  
 }
 
 .flecha {
@@ -236,8 +234,6 @@ header {
         text-align: left;
         padding-left: 28%;
     }
-
- 
 
     #dropdown.active-1 {
         display: block;

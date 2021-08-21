@@ -2,18 +2,11 @@ footer {
     .footer {
         background: rgba(91, 54, 116, 0.705);
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: start;
-        padding: 16px;
-
-        .footer__seccion {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .footer-nav {
-            text-align: center;
-        }
+        padding: 20px;
+        flex-direction: column;
+        gap: 16px;
 
         .footer-nav a {
             list-style: none;
@@ -42,7 +35,6 @@ footer {
             color: rgb(233, 221, 232);
         }
         .item-social a {
-            padding: 16px;
             cursor: pointer;
             color: rgb(233, 221, 232);
         }
@@ -51,14 +43,14 @@ footer {
             color: rgb(233, 221, 232);
             font-size: 16px;
             text-transform: uppercase;
-            text-align: center;
+            text-decoration: underline 2px rgb(233, 221, 232) solid;
         }
     }
     .copy {
         background-color: rgb(99, 70, 95);
         text-align: center !important;
         color: rgb(233, 221, 232);
-        font-size: 16px;
+        font-size: 9px;
         padding: 5px;
     }
 
@@ -84,9 +76,32 @@ footer {
     }
 }
 
-// @media (min-width: 1280px) {
-//     .footer-submenu {
-//         left: 500px;
-//         bottom: -122vh;
-//     }
-// }
+@media (min-width: 768px) {
+    footer {
+        .footer {
+            background: rgba(91, 54, 116, 0.705);
+            display: flex;
+            justify-content: space-around;
+            align-items: start;
+            padding: 20px;
+            flex-direction: row;
+            gap: 16px;
+        }
+        .footer__seccion {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer__seccion {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .copy {
+            font-size: 13px;
+        }
+    }
+}

@@ -1,8 +1,8 @@
 .card {
     // Contenedores
     .card-item_img {
-        width: 230px;
-        height: 260px;
+        max-width: 200px;
+        height: 200px;
         box-shadow: 0px 0px 5px 1px black;
     }
 
@@ -20,8 +20,6 @@
         object-fit: cover;
     }
 
-   
-
     a {
         padding-bottom: 10px;
         display: inline-block;
@@ -35,7 +33,4 @@
         padding-bottom: 5px;
         font-family: $txt-parrafo;
     }
-
-    
 }
-

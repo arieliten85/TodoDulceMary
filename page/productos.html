@@ -26,7 +26,7 @@
     <header>
         <!--NAV-->
         <nav class="nav nav-bg">
-            <a href="#" class="logo nav-link">TodoDulceMary</a>
+            <a href="../index.html" class="logo nav-link">TodoDulceMary</a>
             <button class="nav-toggle">
                 <i class="fas fa-bars"></i>
             </button>
@@ -69,8 +69,7 @@
                             <a class="dropdown-link" href="./chocolates.html">chocolates</a>
                         </li>
                         <li class="dropdown-item">
-                            <a class="dropdown-link" href="./cookies.html">Cookies</a
-                        </li>
+                            <a class="dropdown-link" href="./cookies.html">Cookies</a </li>
                         <li class="dropdown-item">
                             <a class="dropdown-link" href="./Cup-cake.html">cup-cake</a>
                         </li>
@@ -140,20 +139,27 @@
         <section class="fondo">
             <hr>
             <h3 class="titulo-NuestrosProductos">Nuestros Productos</h3>
+
+            <!-- BOTON MENU CATALOGO -->
+            <div class="icono-menu_categorias">
+                <span class="fas fa-bars" id="icono-menu"></span>
+            </div>
+            <!-- BOTON MENU CATALOGO -->
+
             <div class="caja-flex">
 
                 <div class="nav-sm_catalogo">
-                    <h3>Menu</h3>
 
-                    <!-- BOTON MENU CATALOGO -->
-                    <div class="icono-menu">
-                        <span class="fas fa-bars" id="icono-menu"></span>
-                    </div>
-                    <!-- BOTON MENU CATALOGO -->
 
                     <div class="cont-menu active " id="menu-2">
+                        <div class="contenedor-search">
+                            <input type="search" id="search" name="search">
+                            <i class="fas fa-search"></i>
+                        </div>
 
-                        <ul >
+                        <h3>Categorías</h3>
+
+                        <ul>
                             <li>
                                 <a href="./chocolates.html">Chocolates</a>
                             </li>
@@ -175,6 +181,12 @@
                 </div>
 
                 <div class="nav-md_catalogo">
+
+                    <div class="contenedor-search">
+                        <input type="search" id="search" name="search">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    
                     <h3>Cátalogo</h3>
                     <ul>
                         <li>
@@ -374,7 +386,7 @@
 
                         <li class="footer-nav-item">
                             <a href="./contactos.html">contactos</a>
-                        </li >
+                        </li>
 
                         <li class="footer-nav-item">
                             <a href="./nosotros.html">nosotros</a>
